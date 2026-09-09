@@ -4,4 +4,4 @@
 
 `src/main/java/.../model` 放置媒体与锚点模型，`calibration` 预留分段偏移算法，`persistence` 负责 SQLite 方案版本，`web` 目录预留时间轴接口。`fixtures` 只包含虚构相机的时间样例。项目以 Quarkus 常见结构组织，使用 Java 17 标准库即可运行当前测试。
 
-执行 `./mvnw test` 检查骨架；首次使用 Maven Wrapper 时允许下载开发依赖。
+安装 Maven 后执行 `mvn -Dmaven.test.skip=true package` 检查当前领域代码；测试依赖接入后再运行 `mvn test`。
